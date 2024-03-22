@@ -45,6 +45,7 @@ module bd_5a3c_wrapper
     SLOT_0_AXI_wstrb,
     SLOT_0_AXI_wvalid,
     clk,
+    probe0,
     resetn);
   input [31:0]SLOT_0_AXI_araddr;
   input [1:0]SLOT_0_AXI_arburst;
@@ -84,6 +85,7 @@ module bd_5a3c_wrapper
   input [63:0]SLOT_0_AXI_wstrb;
   input SLOT_0_AXI_wvalid;
   input clk;
+  input [0:0]probe0;
   input resetn;
 
   wire [31:0]SLOT_0_AXI_araddr;
@@ -124,6 +126,7 @@ module bd_5a3c_wrapper
   wire [63:0]SLOT_0_AXI_wstrb;
   wire SLOT_0_AXI_wvalid;
   wire clk;
+  wire [0:0]probe0;
   wire resetn;
 
   bd_5a3c bd_5a3c_i
@@ -165,5 +168,6 @@ module bd_5a3c_wrapper
         .SLOT_0_AXI_wstrb(SLOT_0_AXI_wstrb),
         .SLOT_0_AXI_wvalid(SLOT_0_AXI_wvalid),
         .clk(clk),
+        .probe0(probe0),
         .resetn(resetn));
 endmodule

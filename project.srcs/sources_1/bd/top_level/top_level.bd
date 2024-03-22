@@ -32,6 +32,7 @@
       },
       "abm_manager": {
         "abm_manager_if": "",
+        "abm_notifier": "",
         "sdp_ram_if_0": "",
         "sdp_ram_if_1": ""
       },
@@ -1164,6 +1165,9 @@
           "resetn": {
             "type": "rst",
             "direction": "I"
+          },
+          "abm_ready": {
+            "direction": "O"
           }
         },
         "components": {
@@ -1514,6 +1518,56 @@
               }
             }
           },
+          "abm_notifier": {
+            "vlnv": "xilinx.com:module_ref:abm_notifier:1.0",
+            "xci_name": "top_level_abm_notifier_0_0",
+            "xci_path": "ip/top_level_abm_notifier_0_0/top_level_abm_notifier_0_0.xci",
+            "inst_hier_path": "abm_manager/abm_notifier",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "abm_notifier",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "resetn",
+                    "value_src": "constant"
+                  },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
+                  }
+                }
+              },
+              "resetn": {
+                "type": "rst",
+                "direction": "I",
+                "parameters": {
+                  "POLARITY": {
+                    "value": "ACTIVE_LOW",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "abm0_updated": {
+                "direction": "I"
+              },
+              "abm1_updated": {
+                "direction": "I"
+              },
+              "abm_ready": {
+                "direction": "O"
+              }
+            }
+          },
           "sdp_ram_if_0": {
             "vlnv": "xilinx.com:module_ref:sdp_ram_if:1.0",
             "xci_name": "top_level_sdp_ram_if_0_0",
@@ -1843,6 +1897,9 @@
                     "value_src": "constant"
                   }
                 }
+              },
+              "last_word_written": {
+                "direction": "O"
               },
               "addrb": {
                 "direction": "I",
@@ -2186,6 +2243,9 @@
                   }
                 }
               },
+              "last_word_written": {
+                "direction": "O"
+              },
               "addrb": {
                 "direction": "I",
                 "left": "13",
@@ -2227,10 +2287,22 @@
               "sdp_ram_if_1/addrb"
             ]
           },
+          "abm_notifier_abm_ready": {
+            "ports": [
+              "abm_notifier/abm_ready",
+              "abm_ready"
+            ]
+          },
           "sdp_ram_if_0_dob": {
             "ports": [
               "sdp_ram_if_0/dob",
               "abm_manager_if/ram0_data"
+            ]
+          },
+          "sdp_ram_if_0_last_word_written": {
+            "ports": [
+              "sdp_ram_if_0/last_word_written",
+              "abm_notifier/abm0_updated"
             ]
           },
           "sdp_ram_if_1_dob": {
@@ -2239,10 +2311,17 @@
               "abm_manager_if/ram1_data"
             ]
           },
+          "sdp_ram_if_1_last_word_written": {
+            "ports": [
+              "sdp_ram_if_1/last_word_written",
+              "abm_notifier/abm1_updated"
+            ]
+          },
           "source_200Mhz_clk": {
             "ports": [
               "clk",
               "abm_manager_if/clk",
+              "abm_notifier/clk",
               "sdp_ram_if_0/clk",
               "sdp_ram_if_1/clk"
             ]
@@ -2251,6 +2330,7 @@
             "ports": [
               "resetn",
               "abm_manager_if/resetn",
+              "abm_notifier/resetn",
               "sdp_ram_if_0/resetn",
               "sdp_ram_if_1/resetn"
             ]
@@ -2287,6 +2367,9 @@
           },
           "resetn": {
             "type": "rst",
+            "direction": "I"
+          },
+          "abm_ready": {
             "direction": "I"
           }
         },
@@ -2565,6 +2648,11 @@
             "xci_name": "top_level_system_ila_0_2",
             "xci_path": "ip/top_level_system_ila_0_2/top_level_system_ila_0_2.xci",
             "inst_hier_path": "sys_control/system_ila_0",
+            "parameters": {
+              "C_MON_TYPE": {
+                "value": "MIX"
+              }
+            },
             "interface_ports": {
               "SLOT_0_AXI": {
                 "mode": "Monitor",
@@ -3659,6 +3747,12 @@
           }
         },
         "nets": {
+          "abm_ready_1": {
+            "ports": [
+              "abm_ready",
+              "system_ila_0/probe0"
+            ]
+          },
           "axi_control_read_addr": {
             "ports": [
               "axi_control/read_addr",
@@ -5738,6 +5832,12 @@
       }
     },
     "nets": {
+      "abm_manager_abm_ready": {
+        "ports": [
+          "abm_manager/abm_ready",
+          "sys_control/abm_ready"
+        ]
+      },
       "eth_0_stat_rx_aligned_0": {
         "ports": [
           "eth_0/aligned",

@@ -24,6 +24,10 @@ module sdp_ram_if #
 ( 
     input   clk, resetn,
 
+    // This will strobe high for a single cycle any time the last
+    // word of the RAM is written to
+    output last_word_written,
+
     // The "read only" RAM interface
     input  [$clog2(DD)-1:0] addrb,    
     output [DW-1:0]         dob,
@@ -101,6 +105,9 @@ sdp_ram # (.DW(DW), .DD(DD), .RAM_TYPE(RAM_TYPE)) u_sdp_ram
 // These are the handshakes for the AXI AW and W channels
 wire aw_handshake = S_AXI_AWREADY & S_AXI_AWVALID;
 wire  w_handshake = S_AXI_WREADY  & S_AXI_WVALID;
+
+// This will be high any time the last word of RAM is written to
+assign last_word_written = (ram_we & (ram_waddr == DD-1));
 
 reg[   1:0] fsm_state;
 reg[AW-1:0] next_waddr;

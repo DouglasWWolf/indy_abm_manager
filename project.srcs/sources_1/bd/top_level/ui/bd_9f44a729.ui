@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-339,-79",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port axis_rx -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port M_AXI -pg 1 -lvl 3 -x 660 -y 100 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace port axis_tx -pg 1 -lvl 3 -x 660 -y 250 -defaultsOSRD
+preplace port port-id_eth_resetn -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port port-id_eth_clk -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace inst rdmx_xmit_0 -pg 1 -lvl 2 -x 470 -y 260 -defaultsOSRD
+preplace inst axis_clock_converter_0 -pg 1 -lvl 1 -x 160 -y 90 -defaultsOSRD
+preplace inst rdmx_recv_0 -pg 1 -lvl 2 -x 470 -y 110 -defaultsOSRD
+preplace netloc eth0_resetn_1 1 0 1 NJ 70
+preplace netloc eth_0_stream_clk 1 0 2 10 290 NJ
+preplace netloc source_200Mhz_clk 1 0 2 20 190 290
+preplace netloc source_200Mhz_resetn 1 0 2 30 200 300
+preplace netloc Conn1 1 0 2 NJ 230 NJ
+preplace netloc Conn2 1 2 1 NJ 250
+preplace netloc axis_clock_converter_0_M_AXIS 1 1 1 N 90
+preplace netloc axis_rx0_1 1 0 1 NJ 50
+preplace netloc rdmx_recv_0_M_AXI 1 2 1 NJ 100
+levelinfo -pg 1 -10 160 470 660
+pagesize -pg 1 -db -bbox -sgen -140 -10 760 350
+"
+}
+

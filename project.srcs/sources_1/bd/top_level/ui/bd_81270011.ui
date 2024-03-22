@@ -1,0 +1,68 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-252,-123",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port qsfp_gt -pg 1 -lvl 3 -x 750 -y 70 -defaultsOSRD
+preplace port qsfp_clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port axis_tx -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port axis_rx -pg 1 -lvl 3 -x 750 -y 90 -defaultsOSRD
+preplace port port-id_sys_resetn -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port port-id_stream_clk -pg 1 -lvl 3 -x 750 -y 290 -defaultsOSRD
+preplace port port-id_stream_resetn -pg 1 -lvl 3 -x 750 -y 530 -defaultsOSRD
+preplace port port-id_aligned -pg 1 -lvl 3 -x 750 -y 110 -defaultsOSRD
+preplace inst cmac -pg 1 -lvl 2 -x 540 -y 70 -swap {0 1 2 3 4 8 6 7 5 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 198 192 193 194 195 196 197 191 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 243 240 241 239 242 250 244 246 247 248 251 249 254 252 253 257 255 256 245} -defaultsOSRD -pinDir gt_serial_port right -pinY gt_serial_port 0R -pinDir gt_ref_clk left -pinY gt_ref_clk 20L -pinDir axis_tx left -pinY axis_tx 0L -pinDir axis_rx right -pinY axis_rx 20R -pinDir stat_tx right -pinY stat_tx 40R -pinDir stat_rx right -pinY stat_rx 60R -pinDir stat_rx.stat_rx_aligned right -pinY stat_rx.stat_rx_aligned 80R -pinDir ctl_tx left -pinY ctl_tx 80L -pinDir ctl_rx left -pinY ctl_rx 100L -pinDir core_drp left -pinY core_drp 140L -pinDir rs_fec_in left -pinY rs_fec_in 120L -pinDir rs_fec_out right -pinY rs_fec_out 100R -pinDir rx_otn_out right -pinY rx_otn_out 120R -pinDir gt_txusrclk2 right -pinY gt_txusrclk2 220R -pinBusDir gt_loopback_in left -pinBusY gt_loopback_in 160L -pinDir gt_ref_clk_out left -pinY gt_ref_clk_out 220L -pinBusDir gt_rxrecclkout right -pinBusY gt_rxrecclkout 240R -pinBusDir gt_powergoodout right -pinBusY gt_powergoodout 260R -pinDir gtwiz_reset_tx_datapath left -pinY gtwiz_reset_tx_datapath 180L -pinDir gtwiz_reset_rx_datapath left -pinY gtwiz_reset_rx_datapath 200L -pinDir sys_reset left -pinY sys_reset 300L -pinDir init_clk left -pinY init_clk 240L -pinBusDir rx_preambleout right -pinBusY rx_preambleout 280R -pinDir usr_rx_reset right -pinY usr_rx_reset 300R -pinDir gt_rxusrclk2 right -pinY gt_rxusrclk2 320R -pinDir core_rx_reset left -pinY core_rx_reset 320L -pinDir rx_clk left -pinY rx_clk 280L -pinDir core_tx_reset left -pinY core_tx_reset 340L -pinDir tx_ovfout right -pinY tx_ovfout 340R -pinDir tx_unfout right -pinY tx_unfout 360R -pinBusDir tx_preamblein left -pinBusY tx_preamblein 380L -pinDir usr_tx_reset right -pinY usr_tx_reset 380R -pinDir core_drp_reset left -pinY core_drp_reset 360L -pinDir drp_clk left -pinY drp_clk 260L
+preplace inst cmac_control -pg 1 -lvl 1 -x 170 -y 150 -swap {8 1 2 3 4 0 6 7 5 9 10} -defaultsOSRD -pinDir rs_fec right -pinY rs_fec 40R -pinDir ctl_tx right -pinY ctl_tx 0R -pinDir ctl_rx right -pinY ctl_rx 20R -pinDir stat_rx_aligned right -pinY stat_rx_aligned 60R
+preplace inst cmac_reset_mgr -pg 1 -lvl 1 -x 170 -y 330 -defaultsOSRD -pinDir src_aresetn left -pinY src_aresetn 0L -pinDir init_clk right -pinY init_clk 0R -pinDir stream_clk right -pinY stream_clk 20R -pinDir init_reset right -pinY init_reset 40R -pinDir stream_resetn right -pinY stream_resetn 200R
+preplace netloc clk_0_1 1 1 1 340 290n
+preplace netloc cmac_gt_rxusrclk2 1 1 2 340 510 730
+preplace netloc cmac_reset_mgr_0_stream_resetn 1 1 2 NJ 530 NJ
+preplace netloc init_clk_reset_peripheral_reset 1 1 1 320 370n
+preplace netloc sys_reset_1 1 0 1 NJ 330
+preplace netloc cmac_stat_rx_aligned 1 1 2 340J 10 730
+preplace netloc Conn1 1 0 2 NJ 70 NJ
+preplace netloc Conn2 1 2 1 NJ 90
+preplace netloc cmac_control_ctl_rx 1 1 1 N 170
+preplace netloc cmac_control_ctl_tx 1 1 1 N 150
+preplace netloc cmac_control_rs_fec 1 1 1 N 190
+preplace netloc cmac_usplus_0_gt_serial_port 1 2 1 NJ 70
+preplace netloc gt_ref_clk_0_1 1 0 2 NJ 90 NJ
+levelinfo -pg 1 0 170 540 750
+pagesize -pg 1 -db -bbox -sgen -130 0 910 590
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-267,-104",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port qsfp_gt -pg 1 -lvl 3 -x 780 -y 70 -defaultsOSRD
+preplace port qsfp_clk -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port axis_tx -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port axis_rx -pg 1 -lvl 3 -x 780 -y 90 -defaultsOSRD
+preplace port port-id_sys_resetn -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_stream_clk -pg 1 -lvl 3 -x 780 -y 210 -defaultsOSRD
+preplace port port-id_stream_resetn -pg 1 -lvl 3 -x 780 -y 470 -defaultsOSRD
+preplace inst cmac -pg 1 -lvl 2 -x 560 -y 230 -defaultsOSRD
+preplace inst cmac_control -pg 1 -lvl 1 -x 180 -y 150 -defaultsOSRD
+preplace inst cmac_reset_mgr -pg 1 -lvl 1 -x 180 -y 460 -defaultsOSRD
+preplace netloc clk_0_1 1 0 3 30 540 340 450 750
+preplace netloc cmac_gt_rxusrclk2 1 0 3 20 380 360 460 760
+preplace netloc cmac_reset_mgr_0_stream_resetn 1 1 2 NJ 470 NJ
+preplace netloc cmac_stat_rx_aligned 1 0 3 20 230 340J 10 760
+preplace netloc init_clk_reset_peripheral_reset 1 1 1 330 250n
+preplace netloc sys_reset_1 1 0 1 NJ 440
+preplace netloc Conn1 1 0 2 NJ 50 360J
+preplace netloc Conn2 1 2 1 NJ 90
+preplace netloc cmac_control_ctl_rx 1 1 1 360 130n
+preplace netloc cmac_control_ctl_tx 1 1 1 330 110n
+preplace netloc cmac_control_rs_fec 1 1 1 350 130n
+preplace netloc cmac_usplus_0_gt_serial_port 1 2 1 NJ 70
+preplace netloc gt_ref_clk_0_1 1 0 2 NJ 70 NJ
+levelinfo -pg 1 0 180 560 780
+pagesize -pg 1 -db -bbox -sgen -130 0 940 550
+"
+}
+0

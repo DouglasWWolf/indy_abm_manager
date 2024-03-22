@@ -342,7 +342,7 @@
       <spirit:addressBlock>
         <spirit:name>reg0</spirit:name>
         <spirit:baseAddress spirit:format="bitString" spirit:resolve="user" spirit:bitStringLength="32">0</spirit:baseAddress>
-        <spirit:range spirit:format="long" spirit:resolve="user" spirit:minimum="4096" spirit:rangeType="long">4294967296</spirit:range>
+        <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="pow(2,(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1) + 1)" spirit:minimum="4096" spirit:rangeType="long">1048576</spirit:range>
         <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) - 1) + 1">512</spirit:width>
         <spirit:usage>register</spirit:usage>
       </spirit:addressBlock>
@@ -359,7 +359,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ca0ae54f</spirit:value>
+            <spirit:value>ba7d96a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -372,7 +372,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ca0ae54f</spirit:value>
+            <spirit:value>ba7d96a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -417,7 +417,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AW&apos;)) - 1)">13</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:ceil(spirit:log(2,spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)))) - 1)">13</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -468,7 +468,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1)">19</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -801,7 +801,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1)">19</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1065,9 +1065,9 @@
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DW">512</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
-        <spirit:name>AW</spirit:name>
-        <spirit:displayName>Aw</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AW">14</spirit:value>
+        <spirit:name>DD</spirit:name>
+        <spirit:displayName>Dd</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DD">16384</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -1084,7 +1084,7 @@
       <spirit:file>
         <spirit:name>xgui/abm_manager_if_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_c95f8827</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_d905147c</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1097,9 +1097,9 @@
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DW">512</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
-      <spirit:name>AW</spirit:name>
-      <spirit:displayName>Aw</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AW">14</spirit:value>
+      <spirit:name>DD</spirit:name>
+      <spirit:displayName>Dd</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DD">16384</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -1121,7 +1121,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-03-22T06:35:02Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-03-22T08:56:24Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>

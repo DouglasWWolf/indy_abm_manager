@@ -342,7 +342,7 @@
       <spirit:addressBlock>
         <spirit:name>reg0</spirit:name>
         <spirit:baseAddress spirit:format="bitString" spirit:resolve="user" spirit:bitStringLength="32">0</spirit:baseAddress>
-        <spirit:range spirit:format="long" spirit:resolve="user" spirit:minimum="4096" spirit:rangeType="long">4294967296</spirit:range>
+        <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="pow(2,(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1) + 1)" spirit:minimum="4096" spirit:rangeType="long">1048576</spirit:range>
         <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) - 1) + 1">512</spirit:width>
         <spirit:usage>register</spirit:usage>
       </spirit:addressBlock>
@@ -359,7 +359,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>39a8836c</spirit:value>
+            <spirit:value>bdd27341</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -372,7 +372,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>39a8836c</spirit:value>
+            <spirit:value>bdd27341</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -451,7 +451,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1)">19</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -784,7 +784,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:ceil(spirit:log(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.DD&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.DW&apos;)) / 8)))) - 1)">19</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1114,7 +1114,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-03-22T07:21:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-03-22T08:56:34Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>

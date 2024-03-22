@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCA79704BAC505AE9",
+      "boundary_crc": "0x46410FB6487A8BA1",
       "design_src": "SBD",
       "device": "xcku15p-ffve1517-3-e",
       "name": "bd_5a3c",
@@ -27,7 +27,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "16",
+            "value": "32",
             "value_src": "default"
           },
           "ARUSER_WIDTH": {
@@ -254,7 +254,7 @@
             "value": "0"
           },
           "C_PROBE11_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_PROBE12_TYPE": {
             "value": "0"
@@ -308,7 +308,7 @@
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_PROBE20_TYPE": {
             "value": "0"
@@ -472,7 +472,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXI_ADDR_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_SLOT_0_AXI_ARUSER_WIDTH": {
             "value": "0"

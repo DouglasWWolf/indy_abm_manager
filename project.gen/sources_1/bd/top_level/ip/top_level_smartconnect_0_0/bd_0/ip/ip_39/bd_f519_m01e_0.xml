@@ -4976,6 +4976,7 @@
       <xilinx:displayName>SC EXIT</xilinx:displayName>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>11</xilinx:coreRevision>
       <xilinx:configElementInfos>

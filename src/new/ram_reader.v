@@ -2,9 +2,7 @@ module ram_reader #
 (
 
     parameter DW = 512,
-    parameter AW = 16,
-    parameter FIRST_DATA = 32'h8000_0000
-
+    parameter AW = 32
 )
 (
     input   clk, resetn,

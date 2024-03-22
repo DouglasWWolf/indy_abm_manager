@@ -2,7 +2,7 @@ module fill_ram #
 (
 
     parameter DW = 512,
-    parameter AW = 16,
+    parameter AW = 20,
     parameter FIRST_DATA = 32'hC000_0000
 
 )
@@ -60,7 +60,7 @@ module fill_ram #
     //==========================================================================
 );
 
-localparam RAM_SIZE = 64 * 1024;
+localparam RAM_SIZE = 1024 * 1024;
 localparam BLOCK_SIZE = 4096;
 localparam CYCLES_PER_BLOCK = BLOCK_SIZE / (DW/8);
 localparam MAX_BLOCKS = RAM_SIZE / BLOCK_SIZE;

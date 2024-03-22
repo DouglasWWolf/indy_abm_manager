@@ -31,7 +31,7 @@ module sdp_ram_if #
     //=================  This is the main AXI4-slave interface  ================
 
     // "Specify write address"              -- Master --    -- Slave --
-    input[31:0]                             S_AXI_AWADDR,
+    input[$clog2(DD * (DW/8))-1:0]          S_AXI_AWADDR,
     input                                   S_AXI_AWVALID,
     input[3:0]                              S_AXI_AWID,
     input[7:0]                              S_AXI_AWLEN,
@@ -56,7 +56,7 @@ module sdp_ram_if #
     input                                   S_AXI_BREADY,
 
     // "Specify read address"               -- Master --    -- Slave --
-    input[31:0]                             S_AXI_ARADDR,
+    input[$clog2(DD * (DW/8))-1:0]          S_AXI_ARADDR,
     input                                   S_AXI_ARVALID,
     input[2:0]                              S_AXI_ARPROT,
     input                                   S_AXI_ARLOCK,

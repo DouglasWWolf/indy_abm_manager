@@ -7,7 +7,8 @@
       "name": "top_level",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1"
+      "tool_version": "2021.1",
+      "validated": "true"
     },
     "design_tree": {
       "pcie": {
@@ -19,13 +20,15 @@
       "eth_0": {
         "cmac": "",
         "cmac_control": "",
-        "cmac_reset_mgr": ""
+        "cmac_reset_mgr": "",
+        "axis_register_slice": ""
       },
       "smartconnect": "",
       "eth_1": {
         "cmac": "",
         "cmac_control": "",
-        "cmac_reset_mgr": ""
+        "cmac_reset_mgr": "",
+        "axis_register_slice": ""
       },
       "abm_manager": {
         "abm_manager_if": "",
@@ -34,10 +37,10 @@
       },
       "sys_control": {
         "axi_control": "",
+        "system_ila_0": "",
         "ram_reader": "",
         "fill_ram_0": "",
-        "fill_ram_1": "",
-        "system_ila_0": ""
+        "fill_ram_1": ""
       },
       "rdmx_0": {
         "rdmx_xmit_0": "",
@@ -54,7 +57,17 @@
       "pcie_refclk": {
         "mode": "Slave",
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
-        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0"
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        }
       },
       "pcie_mgt": {
         "mode": "Master",
@@ -66,6 +79,10 @@
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
         "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
         "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "156250000"
           }
@@ -74,18 +91,34 @@
       "qsfp0_gt": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gt:1.0",
-        "vlnv": "xilinx.com:interface:gt_rtl:1.0"
+        "vlnv": "xilinx.com:interface:gt_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       },
       "qsfp1_gt": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:gt:1.0",
-        "vlnv": "xilinx.com:interface:gt_rtl:1.0"
+        "vlnv": "xilinx.com:interface:gt_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       },
       "qsfp1_clk": {
         "mode": "Slave",
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
         "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
         "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "156250000"
           }
@@ -572,19 +605,31 @@
                 }
               }
             }
+          },
+          "axis_register_slice": {
+            "vlnv": "xilinx.com:ip:axis_register_slice:1.1",
+            "xci_name": "top_level_axis_register_slice_0_0",
+            "xci_path": "ip/top_level_axis_register_slice_0_0/top_level_axis_register_slice_0_0.xci",
+            "inst_hier_path": "eth_0/axis_register_slice"
           }
         },
         "interface_nets": {
-          "Conn1": {
-            "interface_ports": [
-              "axis_tx",
-              "cmac/axis_tx"
-            ]
-          },
           "Conn2": {
             "interface_ports": [
               "axis_rx",
               "cmac/axis_rx"
+            ]
+          },
+          "axis_register_slice_0_M_AXIS": {
+            "interface_ports": [
+              "axis_register_slice/M_AXIS",
+              "cmac/axis_tx"
+            ]
+          },
+          "axis_tx_1": {
+            "interface_ports": [
+              "axis_tx",
+              "axis_register_slice/S_AXIS"
             ]
           },
           "cmac_control_ctl_rx": {
@@ -632,13 +677,15 @@
               "cmac/gt_txusrclk2",
               "cmac/rx_clk",
               "stream_clk",
-              "cmac_reset_mgr/stream_clk"
+              "cmac_reset_mgr/stream_clk",
+              "axis_register_slice/aclk"
             ]
           },
           "cmac_reset_mgr_0_stream_resetn": {
             "ports": [
               "cmac_reset_mgr/stream_resetn",
-              "stream_resetn"
+              "stream_resetn",
+              "axis_register_slice/aresetn"
             ]
           },
           "cmac_stat_rx_aligned": {
@@ -984,19 +1031,31 @@
                 }
               }
             }
+          },
+          "axis_register_slice": {
+            "vlnv": "xilinx.com:ip:axis_register_slice:1.1",
+            "xci_name": "top_level_axis_register_slice_1",
+            "xci_path": "ip/top_level_axis_register_slice_1/top_level_axis_register_slice_1.xci",
+            "inst_hier_path": "eth_1/axis_register_slice"
           }
         },
         "interface_nets": {
-          "Conn1": {
-            "interface_ports": [
-              "axis_tx",
-              "cmac/axis_tx"
-            ]
-          },
           "Conn2": {
             "interface_ports": [
               "axis_rx",
               "cmac/axis_rx"
+            ]
+          },
+          "axis_register_slice_M_AXIS": {
+            "interface_ports": [
+              "axis_register_slice/M_AXIS",
+              "cmac/axis_tx"
+            ]
+          },
+          "axis_tx_1": {
+            "interface_ports": [
+              "axis_tx",
+              "axis_register_slice/S_AXIS"
             ]
           },
           "cmac_control_ctl_rx": {
@@ -1044,13 +1103,15 @@
               "cmac/gt_txusrclk2",
               "cmac/rx_clk",
               "stream_clk",
-              "cmac_reset_mgr/stream_clk"
+              "cmac_reset_mgr/stream_clk",
+              "axis_register_slice/aclk"
             ]
           },
           "cmac_reset_mgr_0_stream_resetn": {
             "ports": [
               "cmac_reset_mgr/stream_resetn",
-              "stream_resetn"
+              "stream_resetn",
+              "axis_register_slice/aresetn"
             ]
           },
           "cmac_stat_rx_aligned": {
@@ -1130,13 +1191,17 @@
                     "value": "AXI4",
                     "value_src": "constant"
                   },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
                   "ID_WIDTH": {
                     "value": "4",
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "32",
-                    "value_src": "constant"
+                    "value": "20",
+                    "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
                     "value": "0",
@@ -1213,6 +1278,10 @@
                   "MAX_BURST_LENGTH": {
                     "value": "256",
                     "value_src": "auto"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 },
                 "port_maps": {
@@ -1225,7 +1294,7 @@
                   "AWADDR": {
                     "physical_name": "S_AXI_AWADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -1323,7 +1392,7 @@
                   "ARADDR": {
                     "physical_name": "S_AXI_ARADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -1407,6 +1476,14 @@
                   "ASSOCIATED_RESET": {
                     "value": "resetn",
                     "value_src": "constant"
+                  },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 }
               },
@@ -1461,13 +1538,17 @@
                     "value": "AXI4",
                     "value_src": "constant"
                   },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
                   "ID_WIDTH": {
                     "value": "4",
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "32",
-                    "value_src": "constant"
+                    "value": "20",
+                    "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
                     "value": "0",
@@ -1544,6 +1625,10 @@
                   "MAX_BURST_LENGTH": {
                     "value": "256",
                     "value_src": "auto"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 },
                 "port_maps": {
@@ -1556,7 +1641,7 @@
                   "AWADDR": {
                     "physical_name": "S_AXI_AWADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -1654,7 +1739,7 @@
                   "ARADDR": {
                     "physical_name": "S_AXI_ARADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -1738,6 +1823,14 @@
                   "ASSOCIATED_RESET": {
                     "value": "resetn",
                     "value_src": "constant"
+                  },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 }
               },
@@ -1787,13 +1880,17 @@
                     "value": "AXI4",
                     "value_src": "constant"
                   },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
                   "ID_WIDTH": {
                     "value": "4",
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "32",
-                    "value_src": "constant"
+                    "value": "20",
+                    "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
                     "value": "0",
@@ -1870,6 +1967,10 @@
                   "MAX_BURST_LENGTH": {
                     "value": "256",
                     "value_src": "auto"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 },
                 "port_maps": {
@@ -1882,7 +1983,7 @@
                   "AWADDR": {
                     "physical_name": "S_AXI_AWADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -1980,7 +2081,7 @@
                   "ARADDR": {
                     "physical_name": "S_AXI_ARADDR",
                     "direction": "I",
-                    "left": "31",
+                    "left": "19",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -2064,6 +2165,14 @@
                   "ASSOCIATED_RESET": {
                     "value": "resetn",
                     "value_src": "constant"
+                  },
+                  "FREQ_HZ": {
+                    "value": "250000000",
+                    "value_src": "user_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "top_level_xdma_0_0_axi_aclk",
+                    "value_src": "default_prop"
                   }
                 }
               },
@@ -2451,6 +2560,19 @@
               }
             }
           },
+          "system_ila_0": {
+            "vlnv": "xilinx.com:ip:system_ila:1.1",
+            "xci_name": "top_level_system_ila_0_2",
+            "xci_path": "ip/top_level_system_ila_0_2/top_level_system_ila_0_2.xci",
+            "inst_hier_path": "sys_control/system_ila_0",
+            "interface_ports": {
+              "SLOT_0_AXI": {
+                "mode": "Monitor",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            }
+          },
           "ram_reader": {
             "vlnv": "xilinx.com:module_ref:ram_reader:1.0",
             "xci_name": "top_level_ram_reader_0_0",
@@ -2484,7 +2606,7 @@
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "16",
+                    "value": "32",
                     "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
@@ -2571,8 +2693,8 @@
                 "address_space_ref": "M_AXI",
                 "base_address": {
                   "minimum": "0x00000000",
-                  "maximum": "0x0000FFFF",
-                  "width": "16"
+                  "maximum": "0xFFFFFFFF",
+                  "width": "32"
                 },
                 "port_maps": {
                   "AWID": {
@@ -2584,7 +2706,7 @@
                   "AWADDR": {
                     "physical_name": "M_AXI_AWADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "31",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -2682,7 +2804,7 @@
                   "ARADDR": {
                     "physical_name": "M_AXI_ARADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "31",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -2799,8 +2921,8 @@
             "addressing": {
               "address_spaces": {
                 "M_AXI": {
-                  "range": "64K",
-                  "width": "16"
+                  "range": "4G",
+                  "width": "32"
                 }
               }
             }
@@ -2838,7 +2960,7 @@
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "16",
+                    "value": "20",
                     "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
@@ -2925,8 +3047,8 @@
                 "address_space_ref": "M_AXI",
                 "base_address": {
                   "minimum": "0x00000000",
-                  "maximum": "0x0000FFFF",
-                  "width": "16"
+                  "maximum": "0x000FFFFF",
+                  "width": "20"
                 },
                 "port_maps": {
                   "AWID": {
@@ -2938,7 +3060,7 @@
                   "AWADDR": {
                     "physical_name": "M_AXI_AWADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "19",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -3036,7 +3158,7 @@
                   "ARADDR": {
                     "physical_name": "M_AXI_ARADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "19",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -3148,8 +3270,8 @@
             "addressing": {
               "address_spaces": {
                 "M_AXI": {
-                  "range": "64K",
-                  "width": "16"
+                  "range": "1M",
+                  "width": "20"
                 }
               }
             }
@@ -3192,7 +3314,7 @@
                     "value_src": "constant"
                   },
                   "ADDR_WIDTH": {
-                    "value": "16",
+                    "value": "20",
                     "value_src": "auto"
                   },
                   "AWUSER_WIDTH": {
@@ -3279,8 +3401,8 @@
                 "address_space_ref": "M_AXI",
                 "base_address": {
                   "minimum": "0x00000000",
-                  "maximum": "0x0000FFFF",
-                  "width": "16"
+                  "maximum": "0x000FFFFF",
+                  "width": "20"
                 },
                 "port_maps": {
                   "AWID": {
@@ -3292,7 +3414,7 @@
                   "AWADDR": {
                     "physical_name": "M_AXI_AWADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "19",
                     "right": "0"
                   },
                   "AWLEN": {
@@ -3390,7 +3512,7 @@
                   "ARADDR": {
                     "physical_name": "M_AXI_ARADDR",
                     "direction": "O",
-                    "left": "15",
+                    "left": "19",
                     "right": "0"
                   },
                   "ARLEN": {
@@ -3502,22 +3624,9 @@
             "addressing": {
               "address_spaces": {
                 "M_AXI": {
-                  "range": "64K",
-                  "width": "16"
+                  "range": "1M",
+                  "width": "20"
                 }
-              }
-            }
-          },
-          "system_ila_0": {
-            "vlnv": "xilinx.com:ip:system_ila:1.1",
-            "xci_name": "top_level_system_ila_0_2",
-            "xci_path": "ip/top_level_system_ila_0_2/top_level_system_ila_0_2.xci",
-            "inst_hier_path": "sys_control/system_ila_0",
-            "interface_ports": {
-              "SLOT_0_AXI": {
-                "mode": "Monitor",
-                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
               }
             }
           }
@@ -3572,21 +3681,21 @@
           "source_200Mhz_clk": {
             "ports": [
               "clk",
-              "fill_ram_0/clk",
-              "ram_reader/clk",
               "axi_control/clk",
-              "fill_ram_1/clk",
-              "system_ila_0/clk"
+              "system_ila_0/clk",
+              "ram_reader/clk",
+              "fill_ram_0/clk",
+              "fill_ram_1/clk"
             ]
           },
           "source_200Mhz_resetn": {
             "ports": [
               "resetn",
-              "fill_ram_0/resetn",
-              "ram_reader/resetn",
               "axi_control/resetn",
-              "fill_ram_1/resetn",
-              "system_ila_0/resetn"
+              "system_ila_0/resetn",
+              "ram_reader/resetn",
+              "fill_ram_0/resetn",
+              "fill_ram_1/resetn"
             ]
           }
         }
@@ -5713,7 +5822,7 @@
             "segments": {
               "SEG_abm_manager_if_reg0": {
                 "address_block": "/abm_manager/abm_manager_if/S_AXI/reg0",
-                "offset": "0x0000",
+                "offset": "0x00000000",
                 "range": "64K"
               }
             }
@@ -5726,7 +5835,7 @@
             "segments": {
               "SEG_rdmx_xmit_0_reg0": {
                 "address_block": "/rdmx_0/rdmx_xmit_0/S_AXI/reg0",
-                "offset": "0x0000",
+                "offset": "0x00000",
                 "range": "64K"
               }
             }
@@ -5739,7 +5848,7 @@
             "segments": {
               "SEG_rdmx_xmit_0_reg0": {
                 "address_block": "/rdmx_1/rdmx_xmit_0/S_AXI/reg0",
-                "offset": "0x0000",
+                "offset": "0x00000",
                 "range": "64K"
               }
             }

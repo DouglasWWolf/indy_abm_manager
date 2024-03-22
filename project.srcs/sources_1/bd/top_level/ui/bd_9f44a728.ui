@@ -18,20 +18,20 @@ preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
 preplace inst rdmx_xmit_0 -pg 1 -lvl 2 -x 510 -y 220 -defaultsOSRD -pinDir AXIS_TX right -pinY AXIS_TX 0R -pinDir S_AXI left -pinY S_AXI 0L -pinDir src_clk left -pinY src_clk 20L -pinDir src_resetn left -pinY src_resetn 40L -pinDir dst_clk left -pinY dst_clk 60L -pinDir packet_data_fifo_full right -pinY packet_data_fifo_full 20R
 preplace inst axis_clock_converter_0 -pg 1 -lvl 1 -x 190 -y 60 -defaultsOSRD -pinDir S_AXIS left -pinY S_AXIS 0L -pinDir M_AXIS right -pinY M_AXIS 20R -pinDir s_axis_aresetn left -pinY s_axis_aresetn 20L -pinDir m_axis_aresetn left -pinY m_axis_aresetn 40L -pinDir s_axis_aclk left -pinY s_axis_aclk 60L -pinDir m_axis_aclk left -pinY m_axis_aclk 80L
 preplace inst rdmx_recv_0 -pg 1 -lvl 2 -x 510 -y 80 -defaultsOSRD -pinDir AXIS_RDMX left -pinY AXIS_RDMX 0L -pinDir M_AXI right -pinY M_AXI 0R -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 40L -pinBusDir packets_rcvd right -pinBusY packets_rcvd 20R
-preplace netloc source_200Mhz_resetn 1 0 2 60 240 320
+preplace netloc eth0_resetn_1 1 0 1 NJ 80
 preplace netloc eth_0_stream_clk 1 0 2 20 280 NJ
 preplace netloc source_200Mhz_clk 1 0 2 40 200 340
-preplace netloc eth0_resetn_1 1 0 1 NJ 80
+preplace netloc source_200Mhz_resetn 1 0 2 60 240 320
 preplace netloc Conn1 1 0 2 NJ 220 NJ
 preplace netloc Conn2 1 2 1 NJ 220
-preplace netloc axis_rx0_1 1 0 1 NJ 60
 preplace netloc axis_clock_converter_0_M_AXIS 1 1 1 N 80
+preplace netloc axis_rx0_1 1 0 1 NJ 60
 preplace netloc rdmx_recv_0_M_AXI 1 2 1 NJ 80
 levelinfo -pg 1 0 190 510 700
 pagesize -pg 1 -db -bbox -sgen -130 0 800 340
 ",
    "No Loops_ScaleFactor":"1.0",
-   "No Loops_TopLeft":"-314,-94",
+   "No Loops_TopLeft":"-314,-181",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port axis_rx0 -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
@@ -56,4 +56,4 @@ levelinfo -pg 1 0 200 380
 pagesize -pg 1 -db -bbox -sgen -130 0 490 340
 "
 }
-
+0

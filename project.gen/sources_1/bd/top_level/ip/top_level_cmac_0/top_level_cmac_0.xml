@@ -125,7 +125,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GT_REF_CLK.FREQ_HZ">156250000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GT_REF_CLK.FREQ_HZ">322265625</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -516,7 +516,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_drpclk_port" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_drpclk_port" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -950,7 +950,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GT_REF_CLK_OUT_PORT.FREQ_HZ">156250000</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GT_REF_CLK_OUT_PORT.FREQ_HZ">322265625</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -6544,7 +6544,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_trans_debug" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_trans_debug" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -6608,7 +6608,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_cmn_drp_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_cmn_drp_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -6864,7 +6864,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_0" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -6928,7 +6928,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_1" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_1" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -6992,7 +6992,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_2" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_2" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -7056,7 +7056,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_3" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.gt_ch_drp_3" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -10393,8 +10393,12 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Jun 14 07:01:17 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:208f7362</spirit:value>
+            <spirit:value>9:549995b4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -11163,7 +11167,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescanreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescanreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11189,7 +11193,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescantrigger" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescantrigger" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11215,7 +11219,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxcdrhold" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxcdrhold" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11241,7 +11245,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxpolarity" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxpolarity" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11267,7 +11271,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxrate" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxrate" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11293,7 +11297,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txdiffctrl" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txdiffctrl" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11319,7 +11323,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpolarity" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpolarity" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11345,7 +11349,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txinhibit" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txinhibit" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11371,7 +11375,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpippmen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpippmen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11397,7 +11401,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpippmsel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpippmsel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11423,7 +11427,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpostcursor" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txpostcursor" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11449,7 +11453,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprbsforceerr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprbsforceerr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11475,7 +11479,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprecursor" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprecursor" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11498,7 +11502,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescandataerror" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_eyescandataerror" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11586,7 +11590,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txbufstatus" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txbufstatus" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11612,7 +11616,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxdfelpmreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxdfelpmreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11638,7 +11642,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxlpmen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxlpmen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11664,7 +11668,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbscntreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbscntreset" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11687,7 +11691,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbserr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbserr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11713,7 +11717,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbssel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxprbssel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11736,7 +11740,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxresetdone" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxresetdone" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11762,7 +11766,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprbssel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txprbssel" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11785,7 +11789,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txresetdone" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_txresetdone" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11808,7 +11812,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxbufstatus" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_rxbufstatus" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11874,7 +11878,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_drpclk" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt_drpclk" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12035,7 +12039,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12054,7 +12058,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12076,7 +12080,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12098,7 +12102,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12124,7 +12128,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12150,7 +12154,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt0_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12173,7 +12177,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12192,7 +12196,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12214,7 +12218,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12236,7 +12240,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12262,7 +12266,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12288,7 +12292,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt1_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12311,7 +12315,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12330,7 +12334,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12352,7 +12356,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12374,7 +12378,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12400,7 +12404,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12426,7 +12430,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt2_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12449,7 +12453,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12468,7 +12472,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12490,7 +12494,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12512,7 +12516,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12538,7 +12542,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -12564,7 +12568,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.gt3_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and (((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)) or (spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2)))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20574,7 +20578,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpaddr" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20600,7 +20604,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpdi" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20622,7 +20626,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpwe" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20644,7 +20648,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpen" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20663,7 +20667,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drprdy" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -20686,7 +20690,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.common0_drpdo" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_LOCATION&apos;)) == 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_RS_FEC_TRANSCODE_BYPASS&apos;))= 0) and ((spirit:decode(id(&apos;PARAM_VALUE.INCLUDE_SHARED_LOGIC&apos;)) == 2) and ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_CMAC_CAUI4_MODE&apos;)) == 2) or ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS&apos;))= 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_GT_TYPE&apos;)) != &quot;GTM&quot;)))))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -30200,7 +30204,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="float">
         <spirit:name>C_GT_REF_CLK_FREQ</spirit:name>
-        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_GT_REF_CLK_FREQ">156.25</spirit:value>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_GT_REF_CLK_FREQ">322.265625</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_OPERATING_MODE</spirit:name>
@@ -30212,7 +30216,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="float">
         <spirit:name>C_GT_DRP_CLK</spirit:name>
-        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_GT_DRP_CLK">156.25</spirit:value>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_GT_DRP_CLK">200</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ENABLE_AXIS</spirit:name>
@@ -30503,7 +30507,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ADD_GT_CNRL_STS_PORTS</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ADD_GT_CNRL_STS_PORTS">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_PLL_TYPE</spirit:name>
@@ -30511,7 +30515,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_QPLL_FRACN_NUMERATOR</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_QPLL_FRACN_NUMERATOR">8388608</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_QPLL_FRACN_NUMERATOR">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RS_FEC_TRANSCODE_BYPASS</spirit:name>
@@ -30736,7 +30740,7 @@
     <spirit:parameter>
       <spirit:name>GT_REF_CLK_FREQ</spirit:name>
       <spirit:displayName>GT RefClk</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.GT_REF_CLK_FREQ" spirit:choiceRef="choice_list_17bbe075" spirit:order="40">156.25</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.GT_REF_CLK_FREQ" spirit:choiceRef="choice_list_17bbe075" spirit:order="40">322.265625</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -30784,7 +30788,7 @@
     <spirit:parameter>
       <spirit:name>GT_DRP_CLK</spirit:name>
       <spirit:displayName>GT DRP/init Clock</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.GT_DRP_CLK" spirit:order="65">156.25</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.GT_DRP_CLK" spirit:order="65">200</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -31576,7 +31580,7 @@
     <spirit:parameter>
       <spirit:name>ADD_GT_CNRL_STS_PORTS</spirit:name>
       <spirit:displayName>Enable Additional GT Control/Status and DRP Ports</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.ADD_GT_CNRL_STS_PORTS" spirit:choiceRef="choice_pairs_4873554b" spirit:order="640">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.ADD_GT_CNRL_STS_PORTS" spirit:choiceRef="choice_pairs_4873554b" spirit:order="640">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -31710,7 +31714,7 @@
         <xilinx:licenseKey>cmac_an_lt@2020.05</xilinx:licenseKey>
       </xilinx:licenseKeys>
       <xilinx:configElementInfos>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_RX.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_RX.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_RX.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_RX.HAS_TKEEP" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_RX.HAS_TLAST" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -31739,12 +31743,18 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CORE_TX_RESET_PORT.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DRP_CLK_PORT.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GTWIZ_RESET_RX_DATAPATH_PORT.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GTWIZ_RESET_TX_DATAPATH_PORT.POLARITY" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.FREQ_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_DRPCLK_PORT.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_REF_CLK.BOARD.ASSOCIATED_PARAM" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_REF_CLK.CAN_DEBUG" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_REF_CLK.FREQ_HZ" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
@@ -31776,19 +31786,20 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GT_TXUSRCLK2_OUT_PORT.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.INIT_CLK_PORT.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RX_CLK_PORT.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SYS_RESET_PORT.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USR_RX_RESET_PORT.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.USR_TX_RESET_PORT.POLARITY" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ADD_GT_CNRL_STS_PORTS" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CMAC_CAUI4_MODE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CMAC_CORE_SELECT" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.GT_DRP_CLK" xilinx:valueSource="user"/>

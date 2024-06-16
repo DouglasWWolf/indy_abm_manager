@@ -9,12 +9,12 @@
 #===============================================================================
 
 #
-# 200 Mhz clock
+# 200 Mhz init clock
 #
-#set_property -dict {PACKAGE_PIN G17  IOSTANDARD LVDS  DIFF_TERM_ADV TERM_100  EQUALIZATION EQ_LEVEL0} [ get_ports clk_200mhz_clk_p ]
-#set_property -dict {PACKAGE_PIN G16  IOSTANDARD LVDS  DIFF_TERM_ADV TERM_100  EQUALIZATION EQ_LEVEL0} [ get_ports clk_200mhz_clk_n ]
-#create_clock -period 5.000 -name sysclk200                                                            [ get_ports clk_200mhz_clk_p ]
-#set_clock_groups -name group_sysclk200 -asynchronous -group [get_clocks sysclk200]
+#set_property -dict {PACKAGE_PIN G16  IOSTANDARD LVDS  DIFF_TERM_ADV TERM_100  EQUALIZATION EQ_LEVEL0} [ get_ports init_clk_clk_n ]
+set_property -dict {PACKAGE_PIN G17  IOSTANDARD LVCMOS18} [get_ports init_clk]
+create_clock -period 5.000 -name sysclk200                [get_ports init_clk]
+set_clock_groups -name group_sysclk200 -asynchronous -group [get_clocks sysclk200]
 
 
 

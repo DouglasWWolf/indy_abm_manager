@@ -21,6 +21,10 @@
   <key attr.name="vert_type" attr.type="string" for="node" id="VT"/>
   <graph edgedefault="undirected" id="G" parse.edgeids="canonical" parse.nodeids="canonical" parse.order="nodesfirst">
     <node id="n0">
+      <data key="VM">top_level</data>
+      <data key="VT">BC</data>
+    </node>
+    <node id="n1">
       <data key="BA">0x0000000000001000</data>
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x00000000000010FF</data>
@@ -38,111 +42,7 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n1">
-      <data key="VM">top_level</data>
-      <data key="VT">BC</data>
-    </node>
     <node id="n2">
-      <data key="VH">2</data>
-      <data key="VM">top_level</data>
-      <data key="VT">VR</data>
-    </node>
-    <node id="n3">
-      <data key="BA">0x0000000000000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x00000000FFFFFFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI</data>
-      <data key="MX">/rdmx_0/rdmx_recv_0</data>
-      <data key="MI">M_AXI</data>
-      <data key="MS">SEG_sdp_ram_if_0_reg0</data>
-      <data key="MV">xilinx.com:module_ref:rdmx_recv:1.0</data>
-      <data key="TM">both</data>
-      <data key="SX">/abm_manager/sdp_ram_if_0</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:sdp_ram_if:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n4">
-      <data key="BA">0x0000000000000000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x00000000FFFFFFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI</data>
-      <data key="MX">/rdmx_1/rdmx_recv_0</data>
-      <data key="MI">M_AXI</data>
-      <data key="MS">SEG_sdp_ram_if_1_reg0</data>
-      <data key="MV">xilinx.com:module_ref:rdmx_recv:1.0</data>
-      <data key="TM">both</data>
-      <data key="SX">/abm_manager/sdp_ram_if_1</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:sdp_ram_if:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n5">
-      <data key="BA">0x00000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0FFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI</data>
-      <data key="MX">/sys_control/fill_ram_0</data>
-      <data key="MI">M_AXI</data>
-      <data key="MS">SEG_rdmx_xmit_0_reg0</data>
-      <data key="MV">xilinx.com:module_ref:fill_ram:1.0</data>
-      <data key="TM">both</data>
-      <data key="SX">/rdmx_0/rdmx_xmit_0</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:rdmx_xmit:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n6">
-      <data key="BA">0x00000</data>
-      <data key="BP">C_BASEADDR</data>
-      <data key="HA">0x0FFFF</data>
-      <data key="HP">C_HIGHADDR</data>
-      <data key="MA">M_AXI</data>
-      <data key="MX">/sys_control/fill_ram_1</data>
-      <data key="MI">M_AXI</data>
-      <data key="MS">SEG_rdmx_xmit_0_reg0</data>
-      <data key="MV">xilinx.com:module_ref:fill_ram:1.0</data>
-      <data key="TM">both</data>
-      <data key="SX">/rdmx_1/rdmx_xmit_0</data>
-      <data key="SI">S_AXI</data>
-      <data key="SS">reg0</data>
-      <data key="SV">xilinx.com:module_ref:rdmx_xmit:1.0</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n7">
-      <data key="TU">active</data>
-      <data key="VH">2</data>
-      <data key="VT">PM</data>
-    </node>
-    <node id="n8">
-      <data key="BA">0x0000000000010000</data>
-      <data key="BP">baseaddr</data>
-      <data key="HA">0x000000000001FFFF</data>
-      <data key="HP">highaddr</data>
-      <data key="MA">M_AXI_B</data>
-      <data key="MX">/pcie/pcie_bridge</data>
-      <data key="MI">M_AXI_B</data>
-      <data key="MS">SEG_xdma_0_CTL0</data>
-      <data key="MV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TM">both</data>
-      <data key="SX">/pcie/pcie_bridge</data>
-      <data key="SI">S_AXI_LITE</data>
-      <data key="SS">CTL0</data>
-      <data key="SV">xilinx.com:ip:xdma:4.1</data>
-      <data key="TU">memory</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n9">
       <data key="BA">0x00000000</data>
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x0000FFFF</data>
@@ -160,29 +60,129 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <edge id="e0" source="n1" target="n2">
+    <node id="n3">
+      <data key="BA">0x00000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x0FFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI</data>
+      <data key="MX">/sys_control/fill_ram_0</data>
+      <data key="MI">M_AXI</data>
+      <data key="MS">SEG_rdmx_xmit_0_reg0</data>
+      <data key="MV">xilinx.com:module_ref:fill_ram:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/rdmx_0/rdmx_xmit</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:rdmx_xmit:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n4">
+      <data key="TU">active</data>
+      <data key="VH">2</data>
+      <data key="VT">PM</data>
+    </node>
+    <node id="n5">
+      <data key="BA">0x0000000000010000</data>
+      <data key="BP">baseaddr</data>
+      <data key="HA">0x000000000001FFFF</data>
+      <data key="HP">highaddr</data>
+      <data key="MA">M_AXI_B</data>
+      <data key="MX">/pcie/pcie_bridge</data>
+      <data key="MI">M_AXI_B</data>
+      <data key="MS">SEG_xdma_0_CTL0</data>
+      <data key="MV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TM">both</data>
+      <data key="SX">/pcie/pcie_bridge</data>
+      <data key="SI">S_AXI_LITE</data>
+      <data key="SS">CTL0</data>
+      <data key="SV">xilinx.com:ip:xdma:4.1</data>
+      <data key="TU">memory</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n6">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x00000000FFFFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI</data>
+      <data key="MX">/rdmx_1/rdmx_recv</data>
+      <data key="MI">M_AXI</data>
+      <data key="MS">SEG_sdp_ram_if_1_reg0</data>
+      <data key="MV">xilinx.com:module_ref:rdmx_recv:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/abm_manager/sdp_ram_if_1</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:sdp_ram_if:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n7">
+      <data key="VH">2</data>
+      <data key="VM">top_level</data>
+      <data key="VT">VR</data>
+    </node>
+    <node id="n8">
+      <data key="BA">0x00000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x0FFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI</data>
+      <data key="MX">/sys_control/fill_ram_1</data>
+      <data key="MI">M_AXI</data>
+      <data key="MS">SEG_rdmx_xmit_0_reg0</data>
+      <data key="MV">xilinx.com:module_ref:fill_ram:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/rdmx_1/rdmx_xmit</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:rdmx_xmit:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n9">
+      <data key="BA">0x0000000000000000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x00000000FFFFFFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">M_AXI</data>
+      <data key="MX">/rdmx_0/rdmx_recv</data>
+      <data key="MI">M_AXI</data>
+      <data key="MS">SEG_sdp_ram_if_0_reg0</data>
+      <data key="MV">xilinx.com:module_ref:rdmx_recv:1.0</data>
+      <data key="TM">both</data>
+      <data key="SX">/abm_manager/sdp_ram_if_0</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">reg0</data>
+      <data key="SV">xilinx.com:module_ref:sdp_ram_if:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <edge id="e0" source="n0" target="n7">
     </edge>
-    <edge id="e1" source="n2" target="n7">
+    <edge id="e1" source="n7" target="n4">
     </edge>
-    <edge id="e2" source="n0" target="n7">
+    <edge id="e2" source="n1" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n8" target="n7">
+    <edge id="e3" source="n5" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n9" target="n7">
+    <edge id="e4" source="n2" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e5" source="n5" target="n7">
+    <edge id="e5" source="n3" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e6" source="n6" target="n7">
+    <edge id="e6" source="n9" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e7" source="n3" target="n7">
+    <edge id="e7" source="n8" target="n4">
       <data key="EH">2</data>
     </edge>
-    <edge id="e8" source="n4" target="n7">
+    <edge id="e8" source="n6" target="n4">
       <data key="EH">2</data>
     </edge>
   </graph>
